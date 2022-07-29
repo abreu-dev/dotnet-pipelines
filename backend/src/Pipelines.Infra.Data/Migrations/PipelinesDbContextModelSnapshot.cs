@@ -10,7 +10,7 @@ using Pipelines.Infra.Data.Context;
 
 namespace Pipelines.Infra.Data.Migrations
 {
-    [DbContext(typeof(PipelinesDbContext))]
+    [DbContext(typeof(DataContext))]
     partial class PipelinesDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

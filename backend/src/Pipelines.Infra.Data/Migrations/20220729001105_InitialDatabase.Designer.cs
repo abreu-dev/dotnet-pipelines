@@ -10,7 +10,7 @@ using Pipelines.Infra.Data.Context;
 
 namespace Pipelines.Infra.Data.Migrations
 {
-    [DbContext(typeof(PipelinesDbContext))]
+    [DbContext(typeof(DataContext))]
     [Migration("20220729001105_InitialDatabase")]
     partial class InitialDatabase
     {

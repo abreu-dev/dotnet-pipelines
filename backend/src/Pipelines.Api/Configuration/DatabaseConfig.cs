@@ -7,7 +7,7 @@ namespace Pipelines.Api.Configuration
     {
         public static void AddDatabaseConfiguration(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddDbContext<PipelinesDbContext>(options =>
+            services.AddDbContext<DataContext>(options =>
                 options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
         }
     }
